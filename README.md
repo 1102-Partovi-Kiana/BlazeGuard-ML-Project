@@ -3,6 +3,9 @@
 ## Overview
 Put a brief description of what the project does, its purpose, and the problem it solves.
 
+## Contributions 
+This project was developed by Kiana Partovi and Jairo Cadena-Mendez.
+
 ## Features
 - Developed a machine learning model to predict fire spread based on satellite imagery using Python and TensorFlow, finetuning a UNet to fit our needs.
 - Built a user-friendly frontend website with React, allowing users to upload satellite images for fire spread prediction.
