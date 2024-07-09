@@ -5,6 +5,7 @@ import AOS from 'aos';
 import Image from '../../assets/images/FirePic.png';
 import FireChart from '../FireChart';
 import Accordion from '../Accordion'; // Import the accordion component
+import ImageCarousel from '../ImageCarousel'; // Import the aimage carousel
 
 function FireInfo() {
     const [hoverActive, setHoverActive] = useState(false);
@@ -95,6 +96,10 @@ function FireInfo() {
                 <section className="section">
                     <h2>Wildfire Statistics</h2>
                     <FireChart />
+                </section>
+                <section className="section">
+                    <h2>Wildfire Images</h2>
+                    <ImageCarousel /> {/* Add the image carousel here */}
                 </section>
             </div>
             

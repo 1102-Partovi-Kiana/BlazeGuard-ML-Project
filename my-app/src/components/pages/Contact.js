@@ -45,7 +45,7 @@ function Contact() {
         </p>
         <p>If you have any comments, concerns, questions, etc, please feel free to fill up the form and then click send and we will get back to you within 24 hours</p>
         <div className="contact-details">
-            <p><i className="fas fa-envelope"></i> name@email.com</p>
+            <p><i className="fas fa-envelope"></i> BlazeGuard@gmail.com</p>
             <p><i className="fas fa-map-marker-alt"></i> 1664 N Virginia St, Reno, NV 89557</p>
         </div>
         <div className="social-media-icons">
