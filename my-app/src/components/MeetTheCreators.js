@@ -16,7 +16,7 @@ const MeetTheCreators = () => {
             <img src={KianaImage} alt="Kiana" />
             <div className="social-media">
                 <div className="linkedin item">
-                    <a href="www.linkedin.com/in/kianapartovi" target="_blank" class="social-link">
+                    <a href="https://www.linkedin.com/in/kianapartovi/" target="_blank" class="social-link">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -42,7 +42,7 @@ const MeetTheCreators = () => {
                     </a>
                 </div>
                 <div className="gmail item">
-                    <a href="mailto:your-email@example.com" class="social-link">
+                    <a href="mailto:Jairocadenamendez@gmail.com" class="social-link">
                         <i class="fas fa-envelope"></i>
                     </a> 
                 </div>
