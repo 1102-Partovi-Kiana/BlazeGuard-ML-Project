@@ -1,0 +1,78 @@
+/* Accordion.css */
+.accordion {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background: #f7f7f7;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    color: #ff7e5f;
+    font-weight: 600;
+}
+
+.accordion-content {
+    padding: 20px;
+    background: #fff;
+    color: #ff7e5f;;
+    line-height: 1.6;
+}
+
+.accordion-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion-content li {
+    margin-bottom: 10px;
+    padding-left: 25px; /* Ensure all list items have consistent left padding */
+    position: relative;
+}
+
+.accordion-content .bold-check {
+    font-weight: bold;
+    color: #ff7e5f;
+}
+
+.accordion-content .bold-check::before {
+    content: '✓';
+    color: #ff7e5f;
+    position: absolute;
+    left: 0; /* Aligns the checkmark at the start of the padding */
+}
+
+.accordion-content p {
+    color: #ff7e5f; /* Lighter orange color */
+    margin: 0 0 10px 0;
+}
+
+.highlight-text {
+    color: #666 !important;
+    font-weight: bold;
+    text-align: left; /* Ensures the text is left justified */
+}
+
+/* FireInfo.css */
+.prevention-tips li {
+    margin-bottom: 15px;
+    padding-left: 25px; /* Increased padding to move the checkmarks right */
+    position: relative;
+}
+
+.prevention-tips li::before {
+    content: '✓';
+    color: #ff7e5f;
+    position: absolute;
+    left: 0; /* Aligns the checkmark at the start of the padding */
+    top: 5px;
+    font-weight: bold;
+}

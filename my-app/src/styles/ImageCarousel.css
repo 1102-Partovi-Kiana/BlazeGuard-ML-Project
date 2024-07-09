@@ -1,0 +1,68 @@
+.carousel-container {
+    perspective: 1500px; /* Maintain the perspective */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the carousel vertically */
+    margin-top: 50px;
+    overflow: hidden; /* Hide overflow to avoid scrollbar */
+}
+
+.carousel {
+    width: 80%; /* Slightly reduce the width */
+    height: 70vh; /* Slightly reduce the height */
+    position: relative;
+    transform-style: preserve-3d;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the carousel items */
+    transition: transform 1s ease; /* Smooth transition */
+}
+
+.carousel-item {
+    position: absolute;
+    width: 50%; /* Adjust the width of each item */
+    height: 70vh; /* Adjust the height of each item */
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    line-height: 150px;
+    font-size: 24px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s ease, opacity 1s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.carousel-item:nth-child(1) {
+    transform: rotateY(0deg) translateZ(600px); /* Adjust translateZ value */
+}
+
+.carousel-item:nth-child(2) {
+    transform: rotateY(51.42deg) translateZ(600px); /* Adjust translateZ value */
+}
+
+.carousel-item:nth-child(3) {
+    transform: rotateY(102.84deg) translateZ(600px); /* Adjust translateZ value */
+}
+
+.carousel-item:nth-child(4) {
+    transform: rotateY(154.26deg) translateZ(600px); /* Adjust translateZ value */
+}
+
+.carousel-item:nth-child(5) {
+    transform: rotateY(205.68deg) translateZ(600px); /* Adjust translateZ value */
+}
+
+.carousel-item:nth-child(6) {
+    transform: rotateY(257.1deg) translateZ(600px); /* Adjust translateZ value */
+}
+
+.carousel-item:nth-child(7) {
+    transform: rotateY(308.52deg) translateZ(600px); /* Adjust translateZ value */
+}

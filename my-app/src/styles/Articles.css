@@ -1,0 +1,79 @@
+.articles-container {
+  padding: 20px;
+}
+
+.articles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Reduce gap between cards */
+  justify-content: center;
+}
+
+.article-card {
+  background-color: rgba(255, 255, 255, 0.4); /* Adjust opacity as needed */
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 250px; /* Adjust width to be more square */
+  margin: 10px; /* Reduce margin for closer cards */
+  text-align: left;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+}
+
+.article-content {
+  padding: 15px; /* Adjust padding as needed */
+}
+
+.article-title {
+  font-size: 1.2em; /* Reduce font size */
+  margin: 0 0 10px;
+}
+
+.article-title a {
+  text-decoration: none;
+  color: #625858;
+}
+
+.article-title a:hover {
+  text-decoration: underline;
+}
+
+.article-date {
+  color: #777;
+  margin: 0 0 10px; /* Adjust margin as needed */
+}
+
+.article-description {
+  font-size: 0.9em; /* Reduce font size */
+  color: #333;
+  margin: 0 0 15px; /* Adjust margin as needed */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-button {
+  padding: 5px 15px; /* Adjust padding as needed */
+  background-color: transparent;
+  color: #625858; /* Match this to your purple background color */
+  border: 1px solid #625858; /* Match this to your purple background color */
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  font-size: 0.9em; /* Reduce font size */
+}
+
+.read-button:hover {
+  background-color: #625858; /* Match this to your purple background color */
+  color: #fff;
+}
+
+.read-button a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,122 @@
+
+.navbar {
+  background: #333;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically center */
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 50px;
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #fff; /* Background highlight on hover */
+}
+
+.nav-item:hover .nav-links {
+  color: #333; /* Text color change on hover */
+}
+
+.nav-menu.active {
+  background: #333;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #333;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+}
