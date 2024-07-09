@@ -4,7 +4,7 @@
 Models for early detection and prediction of forest fires are crucial in today's world. our model identifies patterns and factors which contribute to wildfire spread and ignition. 
 
 ## Contributions 
-This project was developed by Kiana Partovi and Jairo Cadena-Mendez.
+This project was developed by Kiana Partovi, Jairo Cadena-Mendez, Tyler Authement, and Matthew Patterson.
 
 ## Features
 - Developed a machine learning model to predict fire spread based on satellite imagery using Python and TensorFlow, finetuning a UNet to fit our needs.
