@@ -1,7 +1,7 @@
 # BlazeGuard: Our Fire Prediction Machine Learning Model 
 
 ## Overview
-Models for early detection and prediction of forest fires are crucial in today's world. our model identifies patterns and factors which contribute to wildfire spread and ignition. 
+Models for early detection and prediction of forest fires are crucial in today's world. Our model identifies patterns and factors which contribute to wildfire spread and ignition. 
 
 ## Contributions 
 This project was developed by Kiana Partovi, Jairo Cadena-Mendez, Tyler Authement, and Matthew Patterson.
