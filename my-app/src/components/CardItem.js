@@ -7,7 +7,7 @@ function CardItem(props) {
         <li className="cards_item">
             <Link className="cards_item_link" to={props.path}>
                 <figure className="cards_item_pic-wrap" data-category={props.label}> 
-                    <img src={props.src} alt="TRVL image" className="cards_item_img"/> 
+                    <img src={props.src} alt="BlazeGuard image" className="cards_item_img"/> 
                 </figure>  
                 <div className="cards_item_info"> 
                     <h5 className="cards_item_text">{props.text}</h5>
