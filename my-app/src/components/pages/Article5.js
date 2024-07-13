@@ -12,10 +12,10 @@ const calculateReadingTime = (text) => {
 
 function Article5() {
   const recentPosts = [
-    { title: 'Post 1', link: '#' },
-    { title: 'Post 2', link: '#' },
-    { title: 'Post 3', link: '#' },
-    { title: 'Post 4', link: '#' },
+    { title: 'Wildfire Facts you Never Knew', link: 'http://localhost:3000/articles/article7', image: require('../../assets/images/ff.jpeg'), author: 'Kiana Partovi', date: 'June 28, 2024' },
+    { title: 'Everyday Actions to Prevent Wildfire Spread and Start', link: 'http://localhost:3000/articles/article6', image: require('../../assets/images/p.webp'), author: 'Kiana Partovi', date: 'June 27, 2024' },
+    { title: 'Understanding Wildfire Hotspots in the United States', link: 'http://localhost:3000/articles/article5', image: require('../../assets/images/firef.webp'), author: 'Kiana Partovi', date: 'June 25, 2024'  },
+    { title: 'How to Create and Manage a Safe Fire When Camping', link: 'http://localhost:3000/articles/article4', image: require('../../assets/images/camp.jpeg'), author: 'Kiana Partovi', date: 'June 20, 2024'  },
   ];
 
   const [readingTime, setReadingTime] = useState(0);
@@ -32,7 +32,7 @@ function Article5() {
         <img src={HeaderImage} alt="Fire Emergency Kit" className="header-image" />
         <div className="article-header">
           <h1>Understanding Wildfire Hotspots in the United States</h1>
-          <p className="article-meta">By Kiana Partovi | June 27, 2024 | Estimated reading time: {readingTime} {readingTime === 1 ? 'minute' : 'minutes'}</p>
+          <p className="article-meta">By Kiana Partovi | June 25, 2024 | Estimated reading time: {readingTime} {readingTime === 1 ? 'minute' : 'minutes'}</p>
         </div>
 
         <div className="article-content">
@@ -156,10 +156,18 @@ function Article5() {
         </div>
       </div>
       <div className="sidebar">
-        <h2>Recent Posts</h2>
-        <ul>
+      <h2>Recent Posts</h2>
+        <ul className="articles-list">
           {recentPosts.map((post, index) => (
-            <li key={index}><a href={post.link}>{post.title}</a></li>
+            <li key={index} className="article-card">
+              <a href={post.link}>
+                <img src={post.image} alt={post.title} className="article-image" />
+                <div className="article-content">
+                  <p className="article-authordate">By {post.author} | {post.date}</p>
+                  <h3 className="article-title"><a href={post.link}>{post.title}</a></h3>
+                </div>
+              </a>
+            </li>
           ))}
         </ul>
       </div>

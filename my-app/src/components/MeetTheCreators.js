@@ -3,6 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/MeetTheCreators.css';
 import KianaImage from '../assets/images/kianapic.jpg'
 import JairoImage from '../assets/images/Jairo.jpg'
+import picture from '../assets/images/avatar-1.png'
 import Footer from './Footer';
 
 
@@ -51,6 +52,48 @@ const MeetTheCreators = () => {
           <h3>Jairo</h3>
           <span>Developer</span>
           <p>Jairo is a rising senior at the University of Nevada, Reno, majoring in Computer Science and Engineering with minors in Mathematics, Robotics, and Mechanical Engineering. His passion for technology and engineering drives him to continually learn and innovate. Actively involved in various organizations, he is a member of the Association for Computing Machinery (ACM) and participates in TechWise, a program supported by Google. He is also a key member of Nevada Electric Racing and currently works as an Embedded Engineer Intern at Ecoatoms. These experiences have allowed him to build a strong foundation in both technical and leadership skills, preparing him for a successful career in the tech and engineering industries.</p>
+        </div>
+
+        <div className="team-member">
+          <div className="member-img">
+            <img src={picture} alt="Matthew" />
+            <div className="social-media">
+                <div className="linkedin item">
+                    <a href="" target="_blank" class="social-link">
+                        <i className="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div className="gmail item">
+                    <a href="mailto:mattp082404@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a> 
+                </div>
+            </div>
+          </div>
+          <h3>Matthew</h3>
+          <span>Developer</span>
+          <p>TBD</p>
+        </div>
+
+        <div className="team-member">
+          <div className="member-img">
+            <img src={picture} alt="Tyler" />
+            <div className="social-media">
+                <div className="linkedin item">
+                    <a href="https://www.linkedin.com/in/authement/" target="_blank" class="social-link">
+                        <i className="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div className="gmail item">
+                    <a href="mailto:ttma18711@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a> 
+                </div>
+            </div>
+          </div>
+          <h3>Tyler</h3>
+          <span>Developer</span>
+          <p>TBD</p>
         </div>
       </div>
       <Footer />

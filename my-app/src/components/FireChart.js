@@ -6,11 +6,11 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const FireChart = () => {
     const data = {
-        labels: ['2016', '2017', '2018', '2019', '2020'],
+        labels: ['2019', '2020', '2021', '2022', '2023'],
         datasets: [
             {
                 label: 'Acres Burned',
-                data: [500000, 1000000, 750000, 1500000, 2000000],
+                data: [4664364, 10122336, 7125643, 7577183, 2693910],
                 backgroundColor: 'rgba(255, 99, 132, 0.5)',
             },
         ],

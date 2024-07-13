@@ -77,3 +77,11 @@
   color: inherit;
   text-decoration: none;
 }
+
+.article-authordate {
+  font-size: 0.7em; /* Adjust font size */
+  color: #777;
+  margin: 0 0 5px;
+}
+
+
