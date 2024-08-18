@@ -11,7 +11,7 @@ import firef from '../assets/images/firef.webp'
 function Cards() {
   return (
     <div className="cards">
-        <h1> Check out these FEATURED Articles </h1>
+        <h1 style={{ fontSize: '2.5rem', color: '#333', textAlign: 'center', marginBottom: '20px' }}>Check out these FEATURED Articles</h1>
         <div className="cards_container">  
             <div className= "cards_wrapper">
                 <ul className="cards_items">
@@ -31,7 +31,7 @@ function Cards() {
                 
             </div>
         </div>
-        <h1>Here's a Look at Some Wildfires</h1>
+        <h1 style={{ fontSize: '2.5rem', color: '#333', marginBottom: '20px' }}>Here's a Look at Some Wildfires</h1>
         <ImageCarousel/>
            
       
