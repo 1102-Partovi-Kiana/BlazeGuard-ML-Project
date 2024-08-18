@@ -3,10 +3,6 @@
     background: white;
 }
 
-h1 {
-    text-align: center;
-}
-
 .cards_container {
     display: flex;
     flex-flow: column;
