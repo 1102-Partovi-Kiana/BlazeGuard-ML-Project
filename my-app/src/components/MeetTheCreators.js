@@ -3,6 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/MeetTheCreators.css';
 import KianaImage from '../assets/images/kianapic.jpg'
 import JairoImage from '../assets/images/Jairo.jpg'
+import MatthewImage from '../assets/images/Matthew.jpg'
 import picture from '../assets/images/avatar-1.png'
 import Footer from './Footer';
 
@@ -56,7 +57,7 @@ const MeetTheCreators = () => {
 
         <div className="team-member">
           <div className="member-img">
-            <img src={picture} alt="Matthew" />
+            <img src={MatthewImage} alt="Matthew" />
             <div className="social-media">
                 <div className="linkedin item">
                     <a href="" target="_blank" class="social-link">
@@ -72,7 +73,7 @@ const MeetTheCreators = () => {
           </div>
           <h3>Matthew</h3>
           <span>Developer</span>
-          <p>TBD</p>
+          <p>Matthew is a rising junior enrolling at the University of Nevada, Reno, majoring in Computer Science and Engineering with a minor in Mathematics and Statistics. His passion in technology, with a background in applied math, science, and technology has led him to pursue a career in Software Engineering. With a background in Gaming, Matthew aspires to become a software engineer at top game companies such as Riot Games, Roblox, or Microsoft. He is also enrolled in the Techwise program by Talent Sprint and supported by Google in which he hopes to hone his skills in Software Engineering.</p>
         </div>
 
         <div className="team-member">
