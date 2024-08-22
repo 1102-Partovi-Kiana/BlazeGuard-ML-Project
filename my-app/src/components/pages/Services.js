@@ -1,42 +1,58 @@
 import React, { useState } from 'react';
 import '../../styles/Services.css';
 import Footer from '../Footer';
+import axios from 'axios';
+
 
 function Services() {
   const [file, setFile] = useState(null);
+  const [preview, setPreview] = useState(null);
+  const [message, setMessage] = useState('');
 
   const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
+      const file = event.target.files[0];
+      setFile(file);
+      setPreview(URL.createObjectURL(file));
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (file) {
-      // Handle the file upload here, e.g., send it to a server
-      console.log('File ready to be uploaded:', file);
-    } else {
-      console.log('No file selected');
-    }
+  const handleSubmit = async (event) => {
+      event.preventDefault();
+
+      if (!file) {
+          setMessage('Please select a file first!');
+          return;
+      }
+
+      const formData = new FormData();
+      formData.append('file', file);
+
+      {
+          const response = await axios.post('http://localhost:5000/upload', formData, {
+              headers: {
+                  'Content-Type': 'multipart/form-data',
+              },
+          });
+          setMessage(response.data.message);
+      } 
   };
 
   return (
-    <div> 
+    <div>
       <div className="container">
         <div className="services-container">
           <h2 className="upload-heading">Upload a File</h2>
           <form onSubmit={handleSubmit} className="upload-form">
-            <input 
-              type="file" 
-              onChange={handleFileChange} 
-              className="file-input"
-            />
-            <button 
-              type="submit" 
+            <input type="file" onChange={handleFileChange} />
+            {preview && <img src={preview} alt="Preview" style={{ maxWidth: '100%', marginTop: '10px' }} />}
+
+            <button
+              type="submit"
               className="upload-button"
             >
               Upload
             </button>
           </form>
+          {message && <p>{message}</p>}
           {file && (
             <div className="file-info">
               <h4>Selected File:</h4>
